@@ -1,0 +1,24 @@
+.productlist-section{
+    padding: 1rem;
+}
+
+.productlist-heading3{
+    text-align: left;
+}
+
+.productlist-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.productlist-link{
+    color: rgb(73, 160, 235);
+    cursor: pointer;
+}
+
+.productlist-link:hover{
+    text-decoration: underline;
+}

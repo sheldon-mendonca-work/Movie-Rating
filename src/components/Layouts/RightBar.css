@@ -1,0 +1,14 @@
+.mainDiv{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+}
+
+.centerDiv{
+    grid-column: 1/2;
+}
+
+.rightSideBar{
+    grid-column: 2/-1;
+    padding: 0 1rem;
+}

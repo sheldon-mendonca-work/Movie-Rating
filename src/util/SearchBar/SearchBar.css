@@ -1,0 +1,132 @@
+:root{
+    --color-black: 0,0,0;
+    --color-white: 255, 255, 255;
+
+    --color-light-1: 221, 221, 221; 
+
+    --loading-animation-c1: 230, 92, 0;
+    --loading-animation-c2: 24, 178, 1;
+    --loading-animation-c3: 4, 86, 200;
+
+    --color-success: 34, 197, 94;
+
+    
+    --color-primary-light: 29, 155, 240;
+    --color-primary-light-2: 26, 140, 216;
+
+
+    --color-secondary-light: 178, 132, 81;
+    --color-primary-light-hover-1: 15, 20, 25, 0.15;
+    --color-primary-light-hover-2: 0, 0, 0, 0.03;
+    --color-primary-light-hover-3: 238, 238, 238;
+
+    --color-light-border-1: 0, 0, 0, 0.1;
+
+    --color-light-text-1: 0, 0, 0;
+    --color-light-text-2: 83, 100, 113;
+    --color-light-text-3: 15, 20, 25;
+
+    --color-input-bottom: 120, 120, 120
+}
+
+.searchBar{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    font-size: 1rem;
+    z-index: 3;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(var(--color-white), 0.9);
+
+    grid-row: 1/2;
+    grid-column: 3/-1;
+    position: sticky;
+    top: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .searchBar{
+        justify-content: flex-end;
+    }
+}
+
+.searchInputs{
+    position: relative;
+    flex: 0 0 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 2rem;
+    height: 100%;
+    max-width: 40rem;
+}
+
+.searchInput{
+    width: 90%;
+    height: 2rem;
+    border: none;
+    background-color: #eee;
+    border-radius: 100rem;
+    padding: 0.5rem 5rem;
+    font-size: inherit;
+    transition: all 0.2s;
+    border-bottom: 3px solid transparent;
+}
+
+
+.searchInput:focus{
+    border-bottom: 3px solid rgb(var(--color-primary-light));
+    outline: none;
+    width: 100%;
+}
+
+
+.searchIcon{
+    height: 2rem;
+    fill: rgb(16, 29, 44);
+    cursor: pointer;
+    margin-right: -4rem;
+    z-index: 2;
+}
+
+
+.dataResult{
+    background-color: #fff;
+    width: 90%;
+    max-height: 24rem;
+    top: 120%;
+    position: absolute;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    overflow-y: auto;
+    max-width: 40rem;
+}
+
+.searchItem{
+    height: 6rem;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchItem:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+
+.searchItem:hover{
+    background-color: rgba(var(--color-primary-light-hover-2));
+}
+
+.searchbackdrop{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}

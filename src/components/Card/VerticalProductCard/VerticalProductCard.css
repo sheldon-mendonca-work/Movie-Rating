@@ -1,0 +1,26 @@
+.verticalCard{
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 10px;
+    max-height: 6rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.verticalCard-img-div{
+    grid-row: 1/-1;
+    grid-column: 1/2;
+}
+
+.verticalCard-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.verticalCard-title{
+    padding: 0.5rem 0;
+    font-weight: 700;
+}

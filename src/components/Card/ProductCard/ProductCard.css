@@ -1,0 +1,51 @@
+.productcard-card{
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+    background-color: #f3f4f4;
+    min-height: 10rem;
+    font-size: 1.5rem;
+}
+
+.productcard-click{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.productcard-card:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transform: translateY(-2px);
+}
+
+
+.productcard-content{
+    padding: 5px 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.productcard-content>h4{
+    display: inline-block;
+}
+
+.productcard-card-name{
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.productcard-value{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.moviecard-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
